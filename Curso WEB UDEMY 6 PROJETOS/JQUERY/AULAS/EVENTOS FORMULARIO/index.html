@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Jquery eventos - FORMULARIO</title>
+
+		<!-- Jquery -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+
+
+		<!-- JavaScript -->
+		<script type="text/javascript">
+			
+			$(document).ready( function(){
+
+				//focus
+				//blur
+				//change
+
+				$("#campo1").focus( function(){
+					$("#campo1").css("background", "yellow");
+					//alert("Elemento focado!");
+				});
+
+				$("#campo1").blur( function(){
+					$("#campo1").css("background", "black");
+					alert("Elemento perdeu o foco!");
+				});
+
+				$("#campo1").change( function(){
+					$("#campo1").css("background", "black");
+					alert("Elemento perdeu o foco!");
+				});
+
+				$("#selecionado").change( function(){
+					$("#selecionado").css("color", "blue");
+					alert("Elemento mudou!");
+				});
+
+			});
+
+		</script>
+
+
+		<!-- CSS -->
+		<style>
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<input type="text" id="campo1"> 
+
+		<br><br>
+
+		<select id="selecionado">
+			<option value="1">Primeira opção</option>
+			<option value="2">Segunda opção</option>
+		</select>
+		
+	</body>
+
+</html>
